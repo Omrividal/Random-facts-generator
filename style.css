@@ -1,0 +1,180 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f4;
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+}
+
+#facts-img {
+  position: absolute;
+  top: 80px;
+  left: 30px;
+  transform: rotate(-25deg);
+  z-index: -1;
+}
+
+.container {
+  background-color: #fdfdfd;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  max-width: 80%;
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+input {
+  background: transparent;
+  border: none;
+  text-align: end;
+  font-size: 16px;
+  padding: 5px;
+  border-bottom: 1px solid #555;
+}
+
+/* Solution for spacing the numbers from input arrows */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  margin-left: 20px;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+input:focus,
+.btn:focus {
+  outline: none;
+}
+
+.btn {
+  padding: 5px 20px;
+  background-color: #ff8c28;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  display: block;
+  margin-top: 15px;
+}
+
+.regenerate {
+  display: none;
+}
+
+.hide {
+  display: none;
+}
+
+.visible {
+  display: block;
+}
+.wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+
+#main {
+  background-color: #f4f4f4;
+  width: 100%;
+  height: auto;
+  margin: 50px 50px 0 50px;
+}
+
+.styledDiv {
+  padding: 15px;
+  font-size: 16px;
+  margin: 15px 0;
+}
+
+small {
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin-top: 15px;
+  color: #bd0c0c;
+  font-size: 14px;
+  font-weight: 300;
+  visibility: hidden;
+}
+
+footer {
+  background-color: #fff;
+  height: 50px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7.5px;
+}
+
+.heart {
+  color: red;
+}
+
+/* Media query */
+
+@media (max-width: 600px) {
+  #facts-img {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 70px;
+    transform: rotate(-25deg);
+    z-index: -1;
+  }
+
+  .container {
+    background-color: #fdfdfd;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    max-width: 80%;
+  }
+
+  h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  p {
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-align: center;
+    margin: 0 15px;
+  }
+
+  small {
+    text-align: center;
+  }
+}

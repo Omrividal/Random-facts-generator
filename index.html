@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon" />
+    <title>Random Facts Generator</title>
+  </head>
+  <body>
+    <img id="facts-img" src="/img/facts.png" alt="Some facts" />
+    <div class="container" id="container">
+      <h1>Your daily dose of random facts</h1>
+      <p>How many facts would you like to generate?</p>
+      <div class="wrapper">
+        <input type="number" id="number" min="0" max="5" />
+        <button class="btn">Generate</button>
+        <button class="btn regenerate">Regenerate</button>
+        <small>You have reached the max facts please refresh the page.</small>
+      </div>
+      <div id="main"></div>
+    </div>
+
+    <footer>
+      &copy; Omri Vidal <span>2020</span> &
+      <a href="https://api-ninjas.com"> API-Ninjas </a> for the API
+      <i class="heart fa-solid fa-heart fa-l"></i>
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/13a61de68e.js"
+      crossorigin="anonymous"></script>
+    <script src="/script.js"></script>
+  </body>
+</html>
